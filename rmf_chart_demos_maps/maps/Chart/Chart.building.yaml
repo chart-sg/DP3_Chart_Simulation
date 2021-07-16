@@ -1,0 +1,79 @@
+crowd_sim:
+  agent_groups:
+    - {agents_name: [MiR_01], agents_number: 1, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
+  agent_profiles:
+    - {ORCA_tau: 1, ORCA_tauObst: 0.4, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
+  enable: 0
+  goal_sets:
+    []
+  model_types:
+    []
+  obstacle_set: {class: 1, file_name: B1_navmesh.nav, type: nav_mesh}
+  states:
+    - {final: 1, goal_set: -1, name: external_static, navmesh_file_name: ""}
+  transitions:
+    []
+  update_time_step: 0.1
+levels:
+  B1:
+    correspondence_point_sets:
+      - ~
+    doors:
+      - [16, 17, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, CSSD_door], plugin: [1, normal], type: [1, double_hinged]}]
+      - [19, 18, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Lift_door], plugin: [1, normal], type: [1, double_sliding]}]
+    drawing:
+      filename: chart.png
+    elevation: 0
+    flattened_x_offset: 0
+    flattened_y_offset: 0
+    lanes:
+      - [20, 21, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [20, 21, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [21, 23, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [23, 22, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+    layers:
+      {}
+    models:
+      - {model_name: Chart, name: Chart, static: true, x: 1000.67, y: 1646.06, yaw: 0, z: 0}
+    vertices:
+      - [461.274, 593.023, 0, ""]
+      - [1041.069, 592.306, 0, ""]
+      - [1039.648, 1073.27, 0, ""]
+      - [1048.751, 1073.559, 0, ""]
+      - [1127.638, 1074.713, 0, ""]
+      - [1271.288, 1073.936, 0, ""]
+      - [1405.304, 1073.639, 0, ""]
+      - [2137.909, 1073.749, 0, ""]
+      - [2137.909, 1190.435, 0, ""]
+      - [2140.538, 1190.41, 0, ""]
+      - [2289.845, 1191.223, 0, ""]
+      - [2293.623, 1191.223, 0, ""]
+      - [2294.258, 1073.524, 0, ""]
+      - [2760.465, 1073.437, 0, ""]
+      - [2760.593, 2165.952, 0, ""]
+      - [460.563, 2167.191, 0, ""]
+      - [896.346, 1143.534, 0, ""]
+      - [896.256, 1292.032, 0, ""]
+      - [1641.684, 1647.309, 0, ""]
+      - [1641.684, 1753.165, 0, ""]
+      - [663.251, 1223.508, 0, CSSD_spawn, {spawn_robot_name: [1, MiR_01], spawn_robot_type: [1, MiR100]}]
+      - [1322.859, 1225.863, 0, ""]
+      - [1795.352, 1702.532, 0, ""]
+      - [1320.771, 1703.054, 0, ""]
+    walls:
+      - [0, 1, {alpha: [3, 1], texture_name: [1, default]}]
+      - [1, 2, {alpha: [3, 1], texture_name: [1, default]}]
+      - [2, 3, {alpha: [3, 1], texture_name: [1, default]}]
+      - [4, 5, {alpha: [3, 1], texture_name: [1, default]}]
+      - [6, 7, {alpha: [3, 1], texture_name: [1, default]}]
+      - [7, 8, {alpha: [3, 1], texture_name: [1, default]}]
+      - [8, 9, {alpha: [3, 1], texture_name: [1, default]}]
+      - [10, 11, {alpha: [3, 1], texture_name: [1, default]}]
+      - [11, 12, {alpha: [3, 1], texture_name: [1, default]}]
+      - [12, 13, {alpha: [3, 1], texture_name: [1, default]}]
+      - [13, 14, {alpha: [3, 1], texture_name: [1, default]}]
+      - [14, 15, {alpha: [3, 1], texture_name: [1, default]}]
+      - [15, 0, {alpha: [3, 1], texture_name: [1, default]}]
+lifts:
+  {}
+name: Chart
