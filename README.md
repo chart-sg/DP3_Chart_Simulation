@@ -24,4 +24,4 @@ Manual Pushing:
 
 # Emergency Route
 
-![](https://raw.githubusercontent.com/sharp-rmf/DP3_Chart_Simulation/assets/Emergency.png?token=AOBGRKKHW3OJANRYIXZ4QQLBAE7JC)
+![](https://github.com/sharp-rmf/DP3_Chart_Simulation/blob/assets/Emergency.png)
