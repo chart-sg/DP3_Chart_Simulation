@@ -43,7 +43,7 @@ namespace gazebo
     {
       // auto mt = std::make_unique<MoveTo>();
       // Apply a small linear velocity to the model.
-      // this->model->SetLinearVel(ignition::math::Vector3d(.3, 0, 0));
+      this->model->SetLinearVel(ignition::math::Vector3d(.3, 0, 0));
       
       // std::cout<<"HELLO FROM DOWN HERE!"<<std::endl;
       // mt->check_input(location);

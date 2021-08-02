@@ -39,7 +39,7 @@
       <uri>model://ElderMalePatient</uri>
       <pose>0.0 0.0 0.0 0 0 3.1416</pose>
       <static>False</static>
-      <plugin name="librtls_gazebo_plugin.so" filename="librtls_gazebo_plugin.so"/>
+      <plugin name="librtls_gazebo_plugin" filename="librtls_gazebo_plugin.so"/>
     </include>
 
   </world>

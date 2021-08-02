@@ -39,9 +39,9 @@ class MoveTo
         std::cin>>x>>y>>z;
         // std::cin>>y;
         // std::cin>>z;
-        location[0]= x;//_location[0];
-        location[1]= y;//_location[1];
-        location[2]= z;//_location[2];
+        location[0]= 0.0;//x;//_location[0];
+        location[1]= 0.0;//y;//_location[1];
+        location[2]= 0.0;//z;//_location[2];
         std::cout<<"Movng model to positions" 
             <<" X: "<<x
             <<" Y: "<<y

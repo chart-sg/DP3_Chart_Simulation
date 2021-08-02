@@ -4,25 +4,20 @@ crowd_sim:
   agent_profiles:
     - {ORCA_tau: 1, ORCA_tauObst: 0.4, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
   enable: 0
-  goal_sets:
-    []
-  model_types:
-    []
+  goal_sets: []
+  model_types: []
   obstacle_set: {class: 1, file_name: B1_navmesh.nav, type: nav_mesh}
   states:
     - {final: 1, goal_set: -1, name: external_static, navmesh_file_name: ""}
-  transitions:
-    []
+  transitions: []
   update_time_step: 0.1
 levels:
   B1:
-    correspondence_point_sets:
-      - ~
     doors:
-      - [2, 3, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, CSSD_door], plugin: [1, normal], type: [1, double_hinged]}]
-      - [12, 13, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Consult_door], plugin: [1, normal], type: [1, sliding]}]
-      - [18, 19, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Main_Door], plugin: [1, normal], type: [1, sliding]}]
-      - [20, 21, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Lift_Door], plugin: [1, normal], type: [1, double_sliding]}]
+      - [2, 3, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, CSSD_door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, double_hinged]}]
+      - [12, 13, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Consult_door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, sliding]}]
+      - [18, 19, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Main_Door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, sliding]}]
+      - [20, 21, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Lift_Door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, double_sliding]}]
     drawing:
       filename: chart.png
     elevation: 0
@@ -96,23 +91,23 @@ levels:
       - [1755.534, 1890.647, 0, OT_Room, {is_parking_spot: [4, true]}]
       - [1290.178, 1431.672, 0, MiR_enterParking_01]
       - [1462.406, 1430.951, 0, MiR_Parking_01, {is_parking_spot: [4, true]}]
-      - [1386.678, 1696.589, 0, MiR_enterParking_02]
+      - [1386.678, 1696.589, 0, MiR_enterParking_02, {is_charger: [4, true]}]
       - [1385.647, 1903.515, 0, MiR_Parking_02, {is_parking_spot: [4, true]}]
       - [954.399, 1498.962, 0, Consult_Room, {is_parking_spot: [4, true], spawn_robot_name: [1, hospitalRobot], spawn_robot_type: [1, HospitalRobot]}]
       - [1092.028, 1499.411, 0, RoMiO_ClinicArea]
       - [1091.201, 1936.182, 0, RoMiO_enter_WardArea]
       - [508.887, 1934.365, 0, RoMiO_WardArea, {is_parking_spot: [4, true]}]
-      - [1091.795, 1651.441, 0, RoMiO_enterParking_01]
+      - [1091.795, 1651.441, 0, RoMiO_enterParking_01, {is_charger: [4, true]}]
       - [1186.84, 1651.373, 0, RoMiO_Parking_01, {is_parking_spot: [4, true]}]
       - [943.1559999999999, 1935.588, 0, RoMiO_enterParking_02]
       - [942.672, 2031.396, 0, RoMiO_Parking_02, {is_parking_spot: [4, true]}]
       - [1244.742, 1873.211, 0, MissyBot_ClinicArea, {is_parking_spot: [4, true], spawn_robot_name: [1, tinyRobot], spawn_robot_type: [1, TinyRobot]}]
-      - [870.592, 1873.211, 0, MissyBot_enterParking_01]
+      - [870.592, 1873.211, 0, MissyBot_enterParking_01, {is_charger: [4, true]}]
       - [617.49, 1873.211, 0, MissyBot_WardArea, {is_parking_spot: [4, true]}]
       - [871.053, 2076.587, 0, MissyBot_Parking_01]
       - [969.495, 1788.028, 0, Sesto_ClinicArea, {is_parking_spot: [4, true], spawn_robot_name: [1, sesto], spawn_robot_type: [1, MiR100]}]
       - [1553.427, 1788.376, 0, Sesto_LiftArea_01]
-      - [1553.521, 1697.112, 0, Sesto_LiftArea_02]
+      - [1553.521, 1697.112, 0, Sesto_LiftArea_02, {is_charger: [4, true]}]
       - [2218.274, 1698.306, 0, Sesto_OT_Area, {is_parking_spot: [4, true]}]
       - [1915.032, 1697.787, 0, Sesto_enterParking_02]
       - [1915.032, 1820.734, 0, Sesto_Parking_02, {is_parking_spot: [4, true]}]
@@ -120,7 +115,7 @@ levels:
       - [1470.643, 1901.051, 0, Sesto_Parking_01, {is_parking_spot: [4, true]}]
       - [1338.553, 863.756, 0, A&E_Area, {is_parking_spot: [4, true], spawn_robot_name: [1, trolleybed], spawn_robot_type: [1, TrolleyBed]}]
       - [1338.575, 1222.432, 0, TrolleyBed_enterCSSD]
-      - [1338.503, 1697.148, 0, TrolleyBed_LiftArea]
+      - [1338.503, 1697.148, 0, TrolleyBed_LiftArea, {is_charger: [4, true]}]
       - [1837.096, 1698.129, 0, TrolleyBed_enter_OT]
       - [1836.722, 1964.956, 0, TrolleyBed_OT]
       - [971.735, 1696.843, 0, TrolleyBed_ClinicArea, {is_parking_spot: [4, true]}]
@@ -134,6 +129,5 @@ levels:
       - [10, 11, {alpha: [3, 1], texture_name: [1, default]}]
       - [11, 1, {alpha: [3, 1], texture_name: [1, default]}]
       - [10, 9, {alpha: [3, 1], texture_name: [1, default]}]
-lifts:
-  {}
+lifts: {}
 name: Chart
