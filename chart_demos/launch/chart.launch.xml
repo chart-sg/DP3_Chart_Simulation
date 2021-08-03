@@ -37,34 +37,18 @@
   
         <!-- HospitalRobot fleet adapter, and robot state aggregator needed for the HospitalRobot slotcar_plugin -->
   <group>
-    <let name="fleet_name" value="hospitalRobot"/>
-    <include file="$(find-pkg-share chart_demos)/include/adapters/hospitalRobot_adapter.launch.xml">
+    <let name="fleet_name" value="romio"/>
+    <include file="$(find-pkg-share chart_demos)/include/adapters/romio_adapter.launch.xml">
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
       <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/1.yaml" />
     </include>
     <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
-      <arg name="robot_prefix" value="hospitalRobot"/>
+      <arg name="robot_prefix" value="romio"/>
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
     </include>
   </group>
-  
-    <!-- TinyRobot fleet adapter, and robot state aggregator needed for the TinyRobot slotcar_plugin -->
-  <group>
-    <let name="fleet_name" value="tinyRobot"/>
-    <include file="$(find-pkg-share chart_demos)/include/adapters/tinyRobot_adapter.launch.xml">
-      <arg name="fleet_name" value="$(var fleet_name)"/>
-      <arg name="use_sim_time" value="$(var use_sim_time)"/>
-      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/2.yaml" />
-    </include>
-    <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
-      <arg name="robot_prefix" value="tinyRobot"/>
-      <arg name="fleet_name" value="$(var fleet_name)"/>
-      <arg name="use_sim_time" value="$(var use_sim_time)"/>
-    </include>
-  </group>
-  
   
     <!-- Sesto Robot adapter and robot state aggregator needed for Sesto slotcar_plugin -->
   <group>
@@ -72,7 +56,7 @@
     <include file="$(find-pkg-share chart_demos)/include/adapters/sesto_adapter.launch.xml">
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
-      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/3.yaml" />
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/2.yaml" />
     </include>
     <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
       <arg name="robot_prefix" value="sesto"/>
@@ -87,7 +71,7 @@
     <include file="$(find-pkg-share chart_demos)/include/adapters/trolleybed_adapter.launch.xml">
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
-      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/4.yaml" />
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/3.yaml" />
     </include>
     <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
       <arg name="robot_prefix" value="trolleybed"/>

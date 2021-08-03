@@ -1,9 +1,8 @@
 [
 {"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":3, "start_name":"CSSD_Room", "finish_name":"OT_Room"}},
 {"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":3, "start_name":"Consult_Room", "finish_name":"RoMiO_WardArea"}},
-{"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":3, "start_name":"MissyBot_ClinicArea", "finish_name":"MissyBot_WardArea"}},
 {"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":3, "start_name":"Sesto_ClinicArea", "finish_name":"Sesto_OT_Area"}},
-{"task_type":"Loop", "start_time":1, "priority":1, "description": {"num_loops":1, "start_name":"A&E_Area", "finish_name":"TrolleyBed_CSSD"}},
+{"task_type":"Loop", "start_time":1, "priority":1, "description": {"num_loops":1, "start_name":"Trolleybed", "finish_name":"TrolleyBed_CSSD"}},
 {"task_type":"Loop", "start_time":2.5, "priority":1, "description": {"num_loops":1, "start_name":"TrolleyBed_CSSD", "finish_name":"TrolleyBed_OT"}},
 {"task_type":"Loop", "start_time":4, "priority":1, "description": {"num_loops":1, "start_name":"TrolleyBed_OT", "finish_name":"TrolleyBed_ClinicArea"}}
 ]
