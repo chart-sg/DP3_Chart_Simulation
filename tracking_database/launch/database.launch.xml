@@ -1,0 +1,11 @@
+<?xml version='1.0' ?>
+
+<launch>
+    <arg name="config_file" default="$(find-pkg-share dp3_demo)/config/devices.yaml"/>
+
+    <group>
+        <node pkg="tracking_database" exec="database_interface" args="$(var config_file)" output="both">
+        </node>
+    </group>
+
+</launch>

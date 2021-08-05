@@ -9,10 +9,8 @@ include_directories(${GAZEBO_INCLUDE_DIRS})
 link_directories(${GAZEBO_LIBRARY_DIRS})
 list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
-add_library(${CMAKE_PROJECT_NAME} SHARED model_push.cc)
+add_library(${CMAKE_PROJECT_NAME} SHARED rtls_gazebo_plugin.cc)
 target_link_libraries(${CMAKE_PROJECT_NAME} ${GAZEBO_LIBRARIES})
-
-add_executable(model_input input.cc)
 
 install(
   TARGETS ${CMAKE_PROJECT_NAME}

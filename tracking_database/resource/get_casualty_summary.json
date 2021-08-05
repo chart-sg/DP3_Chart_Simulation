@@ -1,0 +1,35 @@
+{
+   "statusCode":"10000",
+   "message":"Get casualty summary successfully",
+   "data":[
+      {
+         "numberOfCases":[
+            {
+               "Sum":2
+            }
+         ],
+         "casualties":[
+            {
+               "location":"CGH",
+               "casualties":{
+                  "total":1,
+                  "P0":0,
+                  "P1":0,
+                  "P2":0,
+                  "P3":1
+               }
+            },
+            {
+               "location":"None",
+               "casualties":{
+                  "total":1,
+                  "P0":0,
+                  "P1":1,
+                  "P2":0,
+                  "P3":0
+               }
+            }
+         ]
+      }
+   ]
+}

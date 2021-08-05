@@ -1,0 +1,246 @@
+{
+    "statusCode":"10000",
+    "message":"Casualty retrieved successfully",
+    "data":[
+       {
+          "_id":"6108aa49f9cb130055f5e8bf",
+          "rfid":"1131",
+          "category":"P0",
+          "notes":[
+             {
+                "_id":"6108aa49f9cb130055f5e8c0",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108aa49f9cb130055f5e8c1",
+                "id":"2",
+                "content":"intense pain"
+             },
+             {
+                "_id":"6108aa49f9cb130055f5e8c2",
+                "id":"3",
+                "content":"numb"
+             }
+          ],
+          "name":"Tan Ang Benbv",
+          "identity":"S32222G",
+          "gender":"M",
+          "lastUpdate":"2021-08-03T02:30:33.280Z",
+          "timeofReg":"2021-08-03T02:30:33.280Z"
+       },
+       {
+          "_id":"6108aa3df9cb130055f5e885",
+          "rfid":"16f2131",
+          "category":"P0",
+          "notes":[
+             {
+                "_id":"6108aa3df9cb130055f5e886",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108aa3df9cb130055f5e887",
+                "id":"2",
+                "content":"intense pain"
+             },
+             {
+                "_id":"6108aa3df9cb130055f5e888",
+                "id":"3",
+                "content":"numb"
+             }
+          ],
+          "name":"Tan Ang Benbv",
+          "identity":"S32222G",
+          "gender":"M",
+          "lastUpdate":"2021-08-03T02:30:21.399Z",
+          "timeofReg":"2021-08-03T02:30:21.399Z"
+       },
+       {
+          "_id":"6108a9a3f9cb130055f5e5e9",
+          "rfid":"16fdf2131",
+          "category":"P0",
+          "notes":[
+             {
+                "_id":"6108a9a3f9cb130055f5e5ea",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108a9a3f9cb130055f5e5eb",
+                "id":"2",
+                "content":"intense pain"
+             },
+             {
+                "_id":"6108a9a3f9cb130055f5e5ec",
+                "id":"3",
+                "content":"numb"
+             }
+          ],
+          "name":"Tan Ang Benbv",
+          "identity":"S3231222G",
+          "gender":"M",
+          "lastUpdate":"2021-08-03T02:27:47.676Z",
+          "timeofReg":"2021-08-03T02:27:47.676Z"
+       },
+       {
+          "_id":"6108a99df9cb130055f5e5c1",
+          "rfid":"16789fdf2131",
+          "category":"P0",
+          "notes":[
+             {
+                "_id":"6108a99df9cb130055f5e5c2",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108a99df9cb130055f5e5c3",
+                "id":"2",
+                "content":"intense pain"
+             },
+             {
+                "_id":"6108a99df9cb130055f5e5c4",
+                "id":"3",
+                "content":"numb"
+             }
+          ],
+          "name":"Tan Ang Benbv",
+          "identity":"S3231222G",
+          "gender":"M",
+          "lastUpdate":"2021-08-03T02:27:41.176Z",
+          "timeofReg":"2021-08-03T02:27:41.176Z"
+       },
+       {
+          "_id":"6108a97bf9cb130055f5e52b",
+          "rfid":"167898751fdf2131",
+          "category":"P0",
+          "notes":[
+             {
+                "_id":"6108a97bf9cb130055f5e52c",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108a97bf9cb130055f5e52d",
+                "id":"2",
+                "content":"intense pain"
+             },
+             {
+                "_id":"6108a97bf9cb130055f5e52e",
+                "id":"3",
+                "content":"numb"
+             }
+          ],
+          "name":"Tan Ang Benbv",
+          "identity":"S323122G",
+          "gender":"M",
+          "lastUpdate":"2021-08-03T02:27:07.301Z",
+          "timeofReg":"2021-08-03T02:27:07.301Z"
+       },
+       {
+          "_id":"6108a95cf9cb130055f5e477",
+          "rfid":"1222345678987512131",
+          "category":"P0",
+          "notes":[
+             {
+                "_id":"6108a95cf9cb130055f5e478",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108a95cf9cb130055f5e479",
+                "id":"2",
+                "content":"intense pain"
+             },
+             {
+                "_id":"6108a95cf9cb130055f5e47a",
+                "id":"3",
+                "content":"numb"
+             }
+          ],
+          "name":"Tan Ang Benbv",
+          "identity":"S32311512G",
+          "gender":"M",
+          "lastUpdate":"2021-08-03T02:26:36.468Z",
+          "timeofReg":"2021-08-03T02:26:36.468Z"
+       },
+       {
+          "_id":"6108a954f9cb130055f5e43f",
+          "rfid":"12345678987512131",
+          "category":"P0",
+          "notes":[
+             {
+                "_id":"6108a954f9cb130055f5e440",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108a954f9cb130055f5e441",
+                "id":"2",
+                "content":"intense pain"
+             },
+             {
+                "_id":"6108a954f9cb130055f5e442",
+                "id":"3",
+                "content":"numb"
+             }
+          ],
+          "name":"Tan Ang Benbv",
+          "identity":"S32311512G",
+          "gender":"M",
+          "lastUpdate":"2021-08-03T02:26:28.992Z",
+          "timeofReg":"2021-08-03T02:26:28.992Z"
+       },
+       {
+          "_id":"6108a93ef9cb130055f5e402",
+          "rfid":"12326772354823761221",
+          "category":"P1",
+          "notes":[
+             {
+                "_id":"6108a93ef9cb130055f5e403",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108a93ef9cb130055f5e404",
+                "id":"2",
+                "content":"intense pain"
+             },
+             {
+                "_id":"6108a93ef9cb130055f5e405",
+                "id":"3",
+                "content":"numb"
+             }
+          ],
+          "name":"Ron",
+          "identity":"S36232234",
+          "gender":"M",
+          "lastUpdate":"2021-08-03T02:26:06.531Z",
+          "timeofReg":"2021-08-03T02:26:06.531Z"
+       },
+       {
+          "_id":"6108a0c4f9cb130055f530af",
+          "rfid":"17",
+          "category":"P3",
+          "notes":[
+             {
+                "_id":"6108a0c4f9cb130055f530b0",
+                "id":"1",
+                "content":"profusely bleeding"
+             },
+             {
+                "_id":"6108a0c4f9cb130055f530b1",
+                "id":"2",
+                "content":"numb"
+             }
+          ],
+          "name":"user1020",
+          "identity":"S1234567Z",
+          "gender":"M",
+          "status":"in_hospital",
+          "lastUpdate":"2021-08-03T01:50:27.197Z",
+          "location":"CGH",
+          "timeofReg":"2021-08-03T01:49:56.649Z"
+       }
+    ]
+ }
