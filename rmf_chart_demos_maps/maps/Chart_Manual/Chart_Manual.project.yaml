@@ -1,0 +1,6 @@
+building:
+  filename: Chart_Manual.building.yaml
+name: Chart_Manual
+traffic_maps:
+  {}
+version: 1
