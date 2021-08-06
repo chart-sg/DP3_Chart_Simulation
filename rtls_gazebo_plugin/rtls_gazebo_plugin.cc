@@ -115,8 +115,8 @@ namespace gazebo
             <model name ='sphere'>\
               <pose>15.0 -20.0 0.0 0 0 0.0</pose>\
               <link name ='link'>\
-                <pose>0.0 0.0 0.0 0 0 0.0</pose>\
                 <collision name ='collision'>\
+                  <pose>0.0 0.0 1.0 0 0 0.0</pose>\
                   <geometry>\
                     <sphere><radius>0.5</radius></sphere>\
                   </geometry>\
@@ -139,70 +139,6 @@ namespace gazebo
         model->GetAttribute("name")->SetFromString(model_name);
         _parent->InsertModelSDF(patientSDF);
       }
-
-      // for (const auto& item : casualties )
-      // {
-      //   if (item.first == std::string("CGH"))
-      //   {
-      //     std::cout<<"CGH CASUALTIES INCOMING!"<<std::endl;
-      //   }
-      //   else if (item.first == std::string("TRIAGE"))
-      //   {
-      //     // Don't do anything for now
-      //     continue;
-      //   }
-      //   else if (item.first == std::string("TRIAGE_P1"))
-      //   {
-      //     // Don't do anything for now
-      //     continue;
-      //   }
-      //   else if (item.first == std::string("TRIAGE_P2"))
-      //   {
-      //     // Don't do anything for now
-      //     continue;
-      //   }
-      //   else if (item.first == std::string("TRIAGE_P3"))
-      //   {
-      //     // Don't do anything for now
-      //     continue;
-      //   }
-
-      //   number_of_casualties = item.second[0];
-      //   std::cout<<"number_of_casualties "<<number_of_casualties<<std::endl;
-      //   for (int i=0; i<number_of_casualties; i++)
-      //   {
-      //     std::cout<<"Generating ONE CASUALTY"<<std::endl;
-          
-      //     sdf::SDF patientSDF;
-      //     patientSDF.SetFromString(
-      //       "<sdf version ='1.4'>\
-      //           <model name ='sphere'>\
-      //             <pose>1 0 0 0 0 0</pose>\
-      //             <link name ='link'>\
-      //               <pose>0 0 .5 0 0 0</pose>\
-      //               <collision name ='collision'>\
-      //                 <geometry>\
-      //                   <sphere><radius>0.5</radius></sphere>\
-      //                 </geometry>\
-      //               </collision>\
-      //               <visual name ='visual'>\
-      //                 <geometry>\
-      //                   <mesh>\
-      //                     <uri>model://MaleVisitorPhone/meshes/MaleVisitorPhoneWalk.dae</uri>\
-      //                   </mesh>\
-      //                 </geometry>\
-      //               </visual>\
-      //             </link>\
-      //           </model>\
-      //         </sdf>");
-      //     // Demonstrate using a custom model name.
-      //     sdf::ElementPtr model = patientSDF.Root()->GetElement("model");
-      //     std::cout<<"I is now at "<<i<<std::endl;
-      //     std::string model_name = "patient" + std::to_string(i);
-      //     model->GetAttribute("name")->SetFromString(model_name);
-      //     _parent->InsertModelSDF(patientSDF);
-      //   }
-      // }
     }
 
     public : std::unordered_map<std::string, std::array<int, 5>> casualties;
