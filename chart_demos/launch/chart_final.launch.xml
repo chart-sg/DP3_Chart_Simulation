@@ -10,7 +10,7 @@
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
     <arg name="viz_config_file" value ="$(find-pkg-share chart_demos)/include/Chart_Final/chart_final.rviz"/>
     <arg name="config_file" value="$(find-pkg-share rmf_chart_demos_maps)/Chart_Final/Chart_Final.building.yaml"/>
-    <arg name="dashboard_config_file" value="$(find-pkg-share rmf_demos_dashboard_resources)/chart/dashboard_config.json"/>
+    <arg name="dashboard_config_file" value="$(find-pkg-share rmf_demos_dashboard_resources)/chart_final/dashboard_config.json"/>
   </include>
   
   <!-- Simulation launch -->
@@ -20,13 +20,13 @@
     <arg name="gazebo_version" value="$(var gazebo_version)" />
   </include>
   
-     <!-- MiR100 adapter and robot state aggregator needed for MiR100 slotcar_plugin -->
+       <!-- MiR100 adapter and robot state aggregator needed for MiR100 slotcar_plugin -->
   <group>
     <let name="fleet_name" value="mir100"/>
     <include file="$(find-pkg-share chart_demos)/include/adapters/mir100_adapter.launch.xml">
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
-      <!--arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/0.yaml" /-->
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart_Final/nav_graphs/0.yaml" />
     </include>
     <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
       <arg name="robot_prefix" value="mir100"/>
@@ -41,7 +41,7 @@
     <include file="$(find-pkg-share chart_demos)/include/adapters/romio_adapter.launch.xml">
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
-      <!--arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/1.yaml" /-->
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart_Final/nav_graphs/1.yaml" />
     </include>
     <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
       <arg name="robot_prefix" value="romio"/>
@@ -56,7 +56,7 @@
     <include file="$(find-pkg-share chart_demos)/include/adapters/trolleybed_adapter.launch.xml">
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
-      <!--arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart/nav_graphs/3.yaml" /-->
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart_Final/nav_graphs/2.yaml" />
     </include>
     <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
       <arg name="robot_prefix" value="trolleybed"/>

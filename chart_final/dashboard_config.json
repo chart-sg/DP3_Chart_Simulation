@@ -1,0 +1,49 @@
+{ 
+  "world_name" : "Chart",
+  "valid_task" : ["Loop"],
+  "task": {
+    "Delivery": {
+    },
+    "Loop": {
+      "places": [
+        "CSSD_Room",
+        "CSSD_mir_01",
+        "CSSD_mir_02",
+        "MiR_ClinicArea_01",
+        "MiR_ClinicArea_02",
+        "MiR_Parking_01",
+        "MiR_Parking_02",
+        "MiR_Parking_03",
+        "MiR_LiftArea",
+        "MiR_Parking_04",
+        "MiR_OT_Area",
+        "OT_Room",
+        "RoMiO",
+        "RoMiO_OT_Area",
+        "RoMiO_Parking_01",
+        "RoMiO_ClinicArea_01",
+        "RoMiO_ClinicArea_02",
+        "RoMiO_enterWard_01",
+        "RoMiO_enterWard_02",
+        "RoMiO_Parking_02",
+        "RoMiO_Parking_03",
+        "RoMiO_WardArea",
+        "Trolleybed_01",
+        "Trolleybed_ClinicArea", 
+        "Trolleybed_CSSD",
+        "Trolleybed_LiftArea",
+        "Trolleybed_enter_OT",
+        "Trolleybed_OT",
+        "Trolleybed_Ward"   
+     ]
+    },
+    "Clean": {
+    },
+    "Station": {
+    },
+    "Patrol": {
+    },
+    "Charging": {
+    }
+  }
+}

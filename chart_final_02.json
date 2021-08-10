@@ -1,0 +1,5 @@
+[
+{"task_type":"Loop", "start_time":0, "priority":1, "description": {"num_loops":1, "start_name":"Trolleybed_01", "finish_name":"Trolleybed_CSSD"}},
+{"task_type":"Loop", "start_time":1.5, "priority":1, "description": {"num_loops":1, "start_name":"Trolleybed_CSSD", "finish_name":"Trolleybed_OT"}},
+{"task_type":"Loop", "start_time":3, "priority":1, "description": {"num_loops":1, "start_name":"Trolleybed_OT", "finish_name":"Trolleybed_Ward"}}
+]

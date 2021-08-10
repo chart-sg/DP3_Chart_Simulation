@@ -50,7 +50,7 @@
         <geometry>
           <mesh>
           <uri>model://MiR100/meshes/body.obj</uri>
-           <scale>100000 100000 100000</scale>
+           <scale>1 1 1</scale>
           </mesh>
         </geometry>
       </visual>

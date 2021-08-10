@@ -1,0 +1,4 @@
+[
+{"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":5, "start_name":"CSSD_Room", "finish_name":"OT_Room"}},
+{"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":5, "start_name":"RoMiO", "finish_name":"RoMiO_WardArea"}}
+]
