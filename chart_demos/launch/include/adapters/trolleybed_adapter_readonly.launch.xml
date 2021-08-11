@@ -3,13 +3,17 @@
 <launch>
 
   <arg name="fleet_name" default="trolleybed1" description="Name of this fleet of TrolleyBed"/>
+  <arg name="nav_graph_file" description="Nav graph required by fleet adapter"/>
 
     <group>
     <include file="$(find-pkg-share rmf_fleet_adapter)/fleet_adapter.launch.xml">
 
       <!-- The name and control type of the fleet -->
       <arg name="fleet_name" value="$(var fleet_name)"/>
-      <arg name="control_type" value="read_only"/>
+      <arg name="control_type" value="read_only_blockade"/>
+
+      <!-- The graph that this fleet should use for navigation -->
+      <arg name="nav_graph_file" value="$(var nav_graph_file)" />
 
       <!-- The nominal linear and angular velocity of the caddy -->
       <arg name="linear_velocity" value="1.0"/>
@@ -21,7 +25,7 @@
 
       <!-- The radius of the circular footprint of the caddy -->
       <arg name="footprint_radius" value="1.5"/>
-      <!-- Other robots are not allowed within this radius --> 
+      <!-- Other robots are not allowed within this radius -->
       <arg name="vicinity_radius" value="1.0"/>
 
       <!-- Give everything time to discover -->
@@ -37,14 +41,14 @@
       <arg name="mass" value="70.0"/>
       <arg name="inertia" value="40.0"/>
       <arg name="friction_coefficient" value="0.22"/>
-      
+
       <!-- Power systems -->
       <arg name="ambient_power_drain" value="20.0"/>
       <arg name="tool_power_drain" value="0.0"/>
-      
+
       <!-- Whether to consider battery drain for task planning -->
       <arg name="drain_battery" value="true"/>
-  
+
       <arg name="recharge_threshold" value="0.2"/>
 
     </include>
