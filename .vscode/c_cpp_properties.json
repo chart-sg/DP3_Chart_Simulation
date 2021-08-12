@@ -7,7 +7,8 @@
       },
       "includePath": [
         "/home/jh/Dev/dp3_chart_sim_ws/src/DP3_Chart_Simulation/rtls_gazebo_plugin/include/**",
-        "/usr/include/**"
+        "/usr/include/**",
+        "/opt/ros/foxy/**"
       ],
       "name": "ROS"
     }
