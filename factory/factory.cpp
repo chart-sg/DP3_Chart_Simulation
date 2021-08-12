@@ -1,4 +1,5 @@
 #include "factory/factory.hpp"
+// #include <ignition/math/Pose3.hh>
 #include <chrono>
 #include <cmath>
 #include <regex>
@@ -133,13 +134,6 @@ void Factory::OnUpdate()
 
     if (_updated == true)
     {
-        // for (const auto& v: _casualties)
-        // {
-        //     std::string location = v.first; // For each location (cgh, eo, triage,...)
-        // }
-        
-        std::vector<int> final_list;
-
         // Get list of patients in cgh
         unsigned int total_cgh_casualties = _casualties.at("CGH")[0];
 
@@ -177,13 +171,9 @@ void Factory::OnUpdate()
             {
                 std::cout<<"casualty_models.size() > total_cgh_casualties "<< casualty_models.size()<< " " <<total_cgh_casualties<<std::endl;
                 // To remove models
-                final_list = casualty_models;
-                final_list.erase(final_list.begin()+total_cgh_casualties -1);
-
-                // std::vector<std::string> models_to_erase;
-                for (const auto& e : final_list)
+                casualty_models.erase(casualty_models.begin(),casualty_models.begin()+total_cgh_casualties);
+                for (const auto& e : casualty_models)
                 {
-                    // models_to_erase.emplace_back("patient"+std::to_string(e))
                     _world->RemoveModel("patient"+std::to_string(e));
                 }
             }
@@ -194,15 +184,7 @@ void Factory::OnUpdate()
                 for (unsigned int i=casualty_models.size(); i<total_cgh_casualties; i++)
                 {
                     add_model(i);
-                    // final_list.emplace_back(i);
-
                 }
-                // final_list.erase(final_list.begin(), final_list.begin()+casualty_models.size());
-                // for (const auto& e : final_list)
-                // {
-                //     // models_to_erase.emplace_back("patient"+std::to_string(e))
-                //     _world->RemoveModel("patient"+std::to_string(e));
-                // }
             }
             // Processed the recently updated casualties. Resetting variable now.
             _updated = false;
@@ -223,9 +205,9 @@ void Factory::add_model(unsigned int& patient_number) const
             <pose>15.0 -20.0 0.0 0 0 0.0</pose>\
             <link name ='link'>\
             <collision name ='collision'>\
-                <pose>0.0 0.0 1.0 0 0 0.0</pose>\
+                <pose>0.0 0.0 0.3 0 0 0.0</pose>\
                 <geometry>\
-                <sphere><radius>0.5</radius></sphere>\
+                <sphere><radius>0.3</radius></sphere>\
                 </geometry>\
             </collision>\
             <visual name ='visual'>\
