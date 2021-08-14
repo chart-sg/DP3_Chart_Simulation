@@ -24,7 +24,7 @@
       <arg name="angular_acceleration" value="1.5"/>
 
       <!-- The radius of the circular footprint of the caddy -->
-      <arg name="footprint_radius" value="1.5"/>
+      <arg name="footprint_radius" value="1.0"/>
       <!-- Other robots are not allowed within this radius -->
       <arg name="vicinity_radius" value="1.0"/>
 
