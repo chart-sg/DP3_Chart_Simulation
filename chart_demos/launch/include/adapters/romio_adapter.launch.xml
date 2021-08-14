@@ -25,9 +25,9 @@
       <arg name="angular_acceleration" value="2.0"/>
 
       <!-- The radius of the circular footprint of this fleet's vehicles -->
-      <arg name="footprint_radius" value="0.5"/>
-      <!-- Other robots are not allowed within this radius --> 
-      <arg name="vicinity_radius" value="1.0"/>
+      <arg name="footprint_radius" value="0.2"/>
+      <!-- Other robots are not allowed within this radius -->
+      <arg name="vicinity_radius" value="0.5"/>
 
       <!-- Whether to use sim time -->
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
@@ -61,11 +61,11 @@
       <arg name="mass" value="70.0"/>
       <arg name="inertia" value="40.0"/>
       <arg name="friction_coefficient" value="0.22"/>
-      
+
       <!-- Power systems -->
       <arg name="ambient_power_drain" value="20.0"/>
       <arg name="tool_power_drain" value="0.0"/>
-      
+
       <!-- Whether to consider battery drain for task planning -->
       <arg name="drain_battery" value="true"/>
 
