@@ -1,4 +1,7 @@
 [
 {"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":5, "start_name":"CSSD_Room", "finish_name":"OT_Room"}},
-{"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":5, "start_name":"RoMiO", "finish_name":"RoMiO_WardArea"}}
+{"task_type":"Loop", "start_time":0, "priority":0, "description": {"num_loops":5, "start_name":"RoMiO", "finish_name":"RoMiO_WardArea"}},
+{"task_type":"Loop", "start_time":1, "priority":1, "description": {"num_loops":1, "start_name":"Trolleybed_01", "finish_name":"Trolleybed_CSSD"}},
+{"task_type":"Loop", "start_time":2.5, "priority":1, "description": {"num_loops":1, "start_name":"Trolleybed_CSSD", "finish_name":"Trolleybed_OT"}},
+{"task_type":"Loop", "start_time":4, "priority":1, "description": {"num_loops":1, "start_name":"Trolleybed_OT", "finish_name":"Trolleybed_Ward"}}
 ]

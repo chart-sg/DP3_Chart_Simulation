@@ -71,10 +71,11 @@
     <include file="$(find-pkg-share chart_demos)/include/adapters/trolleybed_adapter_readonly.launch.xml">
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_chart_demos_maps)/maps/Chart_Manual/nav_graphs/3.yaml" />
 
     </include>
     <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
-      <arg name="robot_prefix" value="$(var fleet_name)"/>
+      <arg name="robot_prefix" value="trolleybed1"/>
       <arg name="fleet_name" value="$(var fleet_name)"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
     </include>

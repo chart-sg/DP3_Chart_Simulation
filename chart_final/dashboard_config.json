@@ -7,8 +7,7 @@
     "Loop": {
       "places": [
         "CSSD_Room",
-        "CSSD_mir_01",
-        "CSSD_mir_02",
+        "MiR_CSSD",
         "MiR_ClinicArea_01",
         "MiR_ClinicArea_02",
         "MiR_Parking_01",
@@ -34,7 +33,12 @@
         "Trolleybed_LiftArea",
         "Trolleybed_enter_OT",
         "Trolleybed_OT",
-        "Trolleybed_Ward"   
+        "Trolleybed_Ward",
+        "Trolleybed_02",
+        "Trolleybed2_turn",
+        "Trolleybed2_ClinicArea", 
+        "Trolleybed2_CSSD"  
+        
      ]
     },
     "Clean": {

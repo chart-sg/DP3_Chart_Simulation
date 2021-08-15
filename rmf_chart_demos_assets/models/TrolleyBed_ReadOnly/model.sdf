@@ -2,26 +2,12 @@
 
 <sdf version='1.6'>
   <model name="TrolleyBed_ReadOnly">
-   <plugin name="readonly" filename="libreadonly.so">
-      <!-- Map name where the robot is spawned -->
-      <level_name>B1</level_name>
-      <!-- Index of navigation graph for the robot as stored in BuildingMap msg -->
-      <graph_index>3</graph_index>
-      <!-- Name of waypoint where caddy is spawned in the map -->
-      <spawn_waypoint>Trolleybed</spawn_waypoint>
-      <!-- Number of waypoints to include in predicted path -->
-      <look_ahead>6</look_ahead>
+   <plugin name="readonly_blockade" filename="libreadonly_blockade.so">
       <!-- Update rate (hz) at which robot_state is published -->
-      <update_rate>15</update_rate> 
-      <!-- Waypoint threshold (m). Radius around the waypoint to determine if caddy is at that waypoint   -->
-      <waypoint_threshold>2.0</waypoint_threshold>
-      <!-- If true, predicted path will merge robot with nearest lane -->
-      <merge_lane>false</merge_lane>
-      <!-- Normal distance of robot from its lane, greater than which its path will merge with the lane -->
-      <lane_threshold>0.2</lane_threshold>
+      <update_rate>1</update_rate>
     </plugin>
-    
-    
+
+
     <!-- Hack: we currently include both Ignition and Gazebo diff drive plugins in the same sdf file, avoiding
     the need to modify it each time we switch simulators. This may result in an error when a simulation engine
     cannot locate the second (unused) plugin, but is ignored for now. -->
@@ -83,7 +69,6 @@
       <odometry_frame>odom</odometry_frame>
       <robot_base_frame>base_footprint</robot_base_frame>
     </plugin>
-    
     <link name='base_footprint'>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>

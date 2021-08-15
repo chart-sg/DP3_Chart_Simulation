@@ -1,6 +1,6 @@
 crowd_sim:
   agent_groups:
-    - {agents_name: [mir100, romio, sesto, trolleybed, trolleybed1], agents_number: 5, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
+    - {agents_name: [mir100, romio, sesto, trolleybed], agents_number: 4, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
   agent_profiles:
     - {ORCA_tau: 1, ORCA_tauObst: 0.4, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
   enable: 0
@@ -106,7 +106,7 @@ levels:
       - [1915.032, 1820.734, 0, Sesto_Parking_02, {is_parking_spot: [4, true]}]
       - [1470.643, 1787.724, 0, Sesto_enterParking_01]
       - [1470.643, 1901.051, 0, Sesto_Parking_01, {is_parking_spot: [4, true]}]
-      - [1338.553, 863.756, 0, Trolleybed, {is_charger: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, trolleybed], spawn_robot_type: [1, TrolleyBed]}]
+      - [1338.553, 863.756, 0, Trolleybed, {is_charger: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, trolleybed1], spawn_robot_type: [1, TrolleyBed_ReadOnly]}]
       - [1338.575, 1222.432, 0, TrolleyBed_enterCSSD]
       - [1338.503, 1697.148, 0, TrolleyBed_LiftArea]
       - [1837.096, 1698.129, 0, TrolleyBed_enter_OT]
