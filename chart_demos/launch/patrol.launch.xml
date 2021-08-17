@@ -1,5 +1,4 @@
 <?xml version='1.0' ?>
 <launch>
-  <executable cmd="ros2 run rmf_demos_tasks dispatch_loop -s CSSD_Room -f OT_Room -n 10 --use_sim_time" output="both"/>
-  <executable cmd="ros2 run rmf_demos_tasks dispatch_loop -s RoMiO -f RoMiO_WardArea -n 10 --use_sim_time" output="both"/>
+  <executable cmd="ros2 run rmf_demos_tasks dispatch_loop -s CSSD_Room -f MiR_Parking_04 -n 10 --use_sim_time" output="both"/>
 </launch>
