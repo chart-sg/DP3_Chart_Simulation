@@ -32,7 +32,7 @@
       <nominal_power>20.0</nominal_power>
 
     </plugin>
-  
+
     <link name="body">
       <pose>0 0 0 0 0 0</pose>
 
@@ -50,7 +50,6 @@
         <geometry>
           <mesh>
           <uri>model://MiR100/meshes/body.obj</uri>
-           <scale>100000 100000 100000</scale>
           </mesh>
         </geometry>
       </visual>
@@ -186,7 +185,7 @@
     </link>
 
     <link name="suspension_tire_left">
-      
+
       <pose>0 0.26 0.10 0 0 0</pose>
       <inertial>
         <mass>1.00</mass>
@@ -222,10 +221,10 @@
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>5.0</mass>
-        
-        
-        
-        
+
+
+
+
         <inertia>
           <ixx>0.757897446874</ixx>
           <iyy>1.302975553365</iyy>
@@ -265,7 +264,7 @@
     </joint>
 
     <link name="suspension_tire_right">
-      
+
       <pose>0 -0.26 0.10 0 0 0</pose>
       <inertial>
         <mass>1.00</mass>
@@ -300,11 +299,11 @@
 
       <inertial>
         <pose>0 0 0 0 0 0</pose>
-        
+
         <mass>5.0</mass>
-        
-        
-        
+
+
+
         <inertia>
           <ixx>0.757897446874</ixx>
           <iyy>1.302975553365</iyy>
