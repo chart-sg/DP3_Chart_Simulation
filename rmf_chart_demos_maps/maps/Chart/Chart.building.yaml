@@ -1,6 +1,6 @@
 crowd_sim:
   agent_groups:
-    - {agents_name: [mir100, romio, sesto, trolleybed], agents_number: 4, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
+    - {agents_name: [romio, trolleybed], agents_number: 2, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
   agent_profiles:
     - {ORCA_tau: 1, ORCA_tauObst: 0.4, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
   enable: 0
@@ -15,25 +15,39 @@ levels:
   B1:
     doors:
       - [2, 3, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, CSSD_door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, double_hinged]}]
-      - [11, 12, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Consult_door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, sliding]}]
-      - [17, 18, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Main_Door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, sliding]}]
-      - [19, 20, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Lift_Door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, double_sliding]}]
+      - [8, 9, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Consult_door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, sliding]}]
+      - [14, 15, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Main_Door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, sliding]}]
+      - [16, 17, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, Lift_Door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, double_sliding]}]
     drawing:
       filename: chart.png
     elevation: 0
     flattened_x_offset: 0
     flattened_y_offset: 0
     lanes:
-      - [22, 23, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
-      - [4, 22, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
-      - [27, 39, {bidirectional: [4, false], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
-      - [39, 40, {bidirectional: [4, false], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [18, 20, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [20, 22, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [22, 21, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [21, 23, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [23, 24, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [24, 25, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [21, 26, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [26, 23, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [22, 27, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [27, 26, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""]}]
+      - [28, 20, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [20, 22, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [22, 21, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [21, 26, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [26, 27, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [27, 22, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [29, 30, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
+      - [30, 26, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""]}]
     layers:
       {}
     measurements:
-      - [13, 14, {distance: [3, 25.105]}]
-      - [15, 16, {distance: [3, 31.393]}]
-      - [8, 9, {distance: [3, 25.089]}]
+      - [10, 11, {distance: [3, 25.105]}]
+      - [12, 13, {distance: [3, 31.393]}]
+      - [5, 6, {distance: [3, 25.089]}]
     models:
       - {model_name: Chart, name: Chart, static: true, x: 1600.9, y: 1315.12, yaw: 0, z: 0}
     vertices:
@@ -41,9 +55,6 @@ levels:
       - [460.563, 2167.191, 0, ""]
       - [896.346, 1143.534, 0, ""]
       - [896.256, 1292.032, 0, ""]
-      - [1290.178, 1221.828, 0, MiR_ClinicArea, {is_parking_spot: [4, false]}]
-      - [1755.405, 1697.635, 0, MiR_enter_OT]
-      - [1289.216, 1696.826, 0, MiR_LiftArea, {is_parking_spot: [4, false]}]
       - [2760.653, 2323.495, 0, ""]
       - [2917.566, 2323.065, 0, ""]
       - [2917.409, 233.376, 0, ""]
@@ -58,32 +69,25 @@ levels:
       - [1262.136, 1045.542, 0, ""]
       - [1642.041, 1642.772, 0, ""]
       - [1641.518, 1758.134, 0, ""]
-      - [1755.534, 1890.647, 0, OT_Room, {is_parking_spot: [4, true]}]
-      - [1290.178, 1431.672, 0, MiR_enterParking_01]
-      - [1462.406, 1430.951, 0, MiR_Parking_01, {is_parking_spot: [4, true]}]
-      - [1386.678, 1696.589, 0, MiR_enterParking_02]
-      - [954.399, 1498.962, 0, Consult_Room, {is_charger: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, romio], spawn_robot_type: [1, RoMiO]}]
-      - [1092.028, 1499.411, 0, RoMiO_ClinicArea]
-      - [639.827, 1701.585, 0, RoMiO_WardArea, {is_parking_spot: [4, true]}]
-      - [1091.795, 1651.441, 0, RoMiO_enterParking_01]
-      - [2218.274, 1698.306, 0, Sesto_OT_Area, {is_parking_spot: [4, true]}]
-      - [1915.032, 1697.787, 0, Sesto_enterParking_02]
-      - [1915.032, 1820.734, 0, Sesto_Parking_02, {is_parking_spot: [4, true]}]
+      - [639.827, 1701.585, 0, RoMiO_WardArea, {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, tinyRobot1], spawn_robot_type: [1, TinyRobot]}]
       - [1338.553, 863.756, 0, Trolleybed, {is_charger: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, trolleybed], spawn_robot_type: [1, TrolleyBed]}]
-      - [1338.575, 1222.432, 0, TrolleyBed_enterCSSD]
-      - [1338.503, 1697.148, 0, TrolleyBed_LiftArea]
-      - [1837.096, 1698.129, 0, TrolleyBed_enter_OT]
-      - [1836.722, 1964.956, 0, TrolleyBed_OT]
-      - [640.398, 1221.931, 0, TrolleyBed_CSSD, {is_parking_spot: [4, true]}]
-      - [786.994, 1221.45, 0, CSSD_mir_01]
       - [639.827, 1874.966, 0, ""]
-      - [1383.742, 1874.966, 0, ""]
+      - [1330.083, 1875.069, 0, "", {is_holding_point: [4, true], is_parking_spot: [4, true]}]
+      - [1032.502, 1875.069, 0, ""]
+      - [1491.768, 1699.649, 0, "", {is_holding_point: [4, true]}]
+      - [1797.046, 1699.649, 0, ""]
+      - [2046.574, 1699.649, 0, "", {is_holding_point: [4, true], is_parking_spot: [4, true]}]
+      - [1330.083, 1698.213, 0, ""]
+      - [1032.308, 1698.717, 0, "", {is_holding_point: [4, true], is_parking_spot: [4, true]}]
+      - [511.913, 1875.03, 0, MiR_WardArea, {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, deliveryRobot1], spawn_robot_type: [1, DeliveryRobot]}]
+      - [1330.564, 1219.488, 0, MiR_Clinic, {is_parking_spot: [4, false]}]
+      - [1330.211, 1483.7, 0, "", {is_holding_point: [4, true]}]
     walls:
       - [0, 1, {alpha: [3, 1], texture_name: [1, default]}]
-      - [0, 7, {alpha: [3, 1], texture_name: [1, default]}]
-      - [7, 8, {alpha: [3, 1], texture_name: [1, default]}]
-      - [9, 10, {alpha: [3, 1], texture_name: [1, default]}]
-      - [10, 1, {alpha: [3, 1], texture_name: [1, default]}]
-      - [9, 8, {alpha: [3, 1], texture_name: [1, default]}]
+      - [0, 4, {alpha: [3, 1], texture_name: [1, default]}]
+      - [4, 5, {alpha: [3, 1], texture_name: [1, default]}]
+      - [6, 7, {alpha: [3, 1], texture_name: [1, default]}]
+      - [7, 1, {alpha: [3, 1], texture_name: [1, default]}]
+      - [6, 5, {alpha: [3, 1], texture_name: [1, default]}]
 lifts: {}
 name: Chart
