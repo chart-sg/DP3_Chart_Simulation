@@ -1,22 +1,31 @@
 # DP3_Chart_Simulation
 
-The A&E demonstration consists of the MiR, Sesto, MissyBot, RoMiO Bot and the TrolleyBed(with Bolt-On Kit). 
+The A&E demonstration is to prioritise incoming casualties from disaster sites. The A&E ward consists of multiple robots such as MiR, Sesto, MissyBot, RoMiO Bot and the TrolleyBed(with Bolt-On Kit).
 
+In typical A&E scenario, the robots will perform their task as per normal according to the task request. However, when the emergency button is activated, all the robots are to pause their assigned task and navigate to the nearest parking spot.
 
-# In Gazebo Simulation
-The robots and trolleybed are using the Full Control Fleet Adapter to navigate and accept loop requests.
+This simulation also shows double deconfliction between two robots and the incoming trolley bed from the ambulance. The first priority will always go to the trolley bed.
 
-# Real Life Demonstration
+# Gazebo Simulation
+The robots are using the Full Control Fleet Adapter to navigate and accept loop requests while the trolley bed use Read-Only Fleet Adapter to reenact manual pushing.
+
+# Fleet Adapters for individual robots & trolleybed
 Full Control Fleet Adapter:
 - MiR Robot
 - MissyBot
 - RoMiO Bot
 
-Traffic Light API:
+Traffic Light Control Fleet API:
 - Sesto Magnus Robot
 
 Manual Pushing:
 - Trolley Bed(with Bolt-On Kit)
+
+# Reference
+
+Refer to this link for System Requirement, Installation & Tutorials
+- https://github.com/sharp-rmf/rmf_demos 
+- https://osrf.github.io/ros2multirobotbook/integration_fleets.html
 
 # Starting and Alternate Parking Points
 
